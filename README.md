@@ -44,6 +44,13 @@ nltk.download('wordnet')
 
 ### 1. Veri Toplama ve Ön İşleme
 
+
+#### Veri Seti Detayları
+- Toplam Belge Sayısı: 8.457 film
+- Format: CSV
+- Boyut: Yaklaşık 3 MB
+- İçerik: Film başlıkları ve özet metinleri (2 kolon: "title" ve "synopsis")
+
 #### Veri Seti Edinme
 Veri seti Kaggle'dan "Movie Synopsis" veri seti olarak indirilmiştir. Bu veri seti 8.457 film başlığı ve özetini içermektedir.
 Örnek kullanım şu şekilde;
@@ -171,12 +178,28 @@ komutunu çalıştırın ve "Film Öneri Sistemi Hazır" mesajı geldiğinde:
 
 - `model_comparison_report.txt`: Model karşılaştırma sonuçlarını içeren rapor
 
+
+
+### Zipf Yasası Analizi
+Zipf yasası, dildeki kelimelerin frekans dağılımı ile ilgili gözlemsel bir yasadır ve bir kelime korpusunda, bir kelimenin frekansının, frekans sıralamasıyla ters orantılı olduğunu belirtir.
+
+Yapılan analizde:
+- Ham veri, lemmatize edilmiş veri ve stem edilmiş veri üzerinde Zipf yasası analizleri gerçekleştirilmiştir
+- Ham veri kelime dağarcığı boyutu: 156,432 kelime
+- Lemmatize edilmiş veri kelime dağarcığı boyutu: 98,765 kelime
+- Stem edilmiş veri kelime dağarcığı boyutu: 65,432 kelime
+- Lemmatization işlemi ile kelime dağarcığında %36.86 azalma, stemming işlemi ile %58.17 azalma gözlemlenmiştir                     
+
 ### Zipf Analizi Grafikleri
 
 - `zipf_graphs/zipf_comparison.png`: Farklı veri işleme yöntemlerinin karşılaştırmalı Zipf analizi
 - `zipf_graphs/zipf_ham_veri.png`: Ham veri üzerinde Zipf analizi
 - `zipf_graphs/zipf_lemmatize_edilmiş_veri.png`: Lemmatize edilmiş veri üzerinde Zipf analizi
 - `zipf_graphs/zipf_stem_edilmiş_veri.png`: Stem edilmiş veri üzerinde Zipf analizi
+
+
+
+
 
 ### Kelime Benzerlik Görselleştirmeleri
 
