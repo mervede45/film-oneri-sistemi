@@ -57,7 +57,7 @@ Veri kaynağı seçin:
 2. Kaggle veri setini kullan (indirmiş olmalısınız)
 3. Kaydedilmiş veriyi kullan
 Seçiminiz (1/2/3): 2
-Kaggle veri seti dosya yolu: C:\Users\MERVE\Desktop\movie_synopsis.csv  
+4.Kaggle veri seti dosya yolu: C:\Users\MERVE\Desktop\movie_synopsis.csv  
 ======================================================================
 
 
