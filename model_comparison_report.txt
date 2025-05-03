@@ -1,0 +1,613 @@
+# Word2Vec Model Karşılaştırma Raporu
+
+## 1. Genel Model İstatistikleri
+
+                                                preprocess model_type  window  vector_size  vocabulary_size  model_size_mb
+lemmatized_model_cbow_window2_dim100.model      lemmatized       cbow       2          100            24194      19.159307
+lemmatized_model_cbow_window2_dim300.model      lemmatized       cbow       2          300            24194      56.076427
+lemmatized_model_cbow_window4_dim100.model      lemmatized       cbow       4          100            24194      19.159307
+lemmatized_model_cbow_window4_dim300.model      lemmatized       cbow       4          300            24194      56.076427
+lemmatized_model_skipgram_window2_dim100.model  lemmatized   skipgram       2          100            24194      19.159311
+lemmatized_model_skipgram_window2_dim300.model  lemmatized   skipgram       2          300            24194      56.076429
+lemmatized_model_skipgram_window4_dim100.model  lemmatized   skipgram       4          100            24194      19.159310
+lemmatized_model_skipgram_window4_dim300.model  lemmatized   skipgram       4          300            24194      56.076429
+stemmed_model_cbow_window2_dim100.model            stemmed       cbow       2          100            19255      15.233064
+stemmed_model_cbow_window2_dim300.model            stemmed       cbow       2          300            19255      44.613867
+stemmed_model_cbow_window4_dim100.model            stemmed       cbow       4          100            19255      15.233064
+stemmed_model_cbow_window4_dim300.model            stemmed       cbow       4          300            19255      44.613867
+stemmed_model_skipgram_window2_dim100.model        stemmed   skipgram       2          100            19255      15.233068
+stemmed_model_skipgram_window2_dim300.model        stemmed   skipgram       2          300            19255      44.613870
+stemmed_model_skipgram_window4_dim100.model        stemmed   skipgram       4          100            19255      15.233067
+stemmed_model_skipgram_window4_dim300.model        stemmed   skipgram       4          300            19255      44.613870
+
+## 2. Model Türü Karşılaştırması (CBOW vs SkipGram)
+
+CBOW Modelleri Ortalama Vokabüler Boyutu: 21724.5
+SkipGram Modelleri Ortalama Vokabüler Boyutu: 21724.5
+
+## 3. Pencere Boyutu Etkisi
+
+Pencere Boyutu 2 Ortalama Vokabüler Boyutu: 21724.5
+Pencere Boyutu 4 Ortalama Vokabüler Boyutu: 21724.5
+
+## 4. Vektör Boyutu Etkisi
+
+Vektör Boyutu 100 Ortalama Model Boyutu: 17.20 MB
+Vektör Boyutu 300 Ortalama Model Boyutu: 50.35 MB
+
+## 5. Önişleme Tekniği Etkisi
+
+Lemmatize Edilmiş Modeller Ortalama Vokabüler Boyutu: 24194.0
+Stem Edilmiş Modeller Ortalama Vokabüler Boyutu: 19255.0
+
+## 6. Test Kelimeleri Benzerlik Sonuçları
+
+### Kelime: 'movie'
+
+#### lemmatized_model_cbow_window2_dim100.model
+- documentary: 0.9996
+- famous: 0.9995
+- follow: 0.9995
+- space: 0.9995
+- joe: 0.9995
+
+#### lemmatized_model_cbow_window2_dim300.model
+- comedy: 0.9998
+- great: 0.9998
+- show: 0.9998
+- truth: 0.9997
+- documentary: 0.9997
+
+#### lemmatized_model_cbow_window4_dim100.model
+- documentary: 0.9997
+- book: 0.9996
+- classic: 0.9996
+- cause: 0.9996
+- joe: 0.9996
+
+#### lemmatized_model_cbow_window4_dim300.model
+- star: 0.9999
+- documentary: 0.9999
+- director: 0.9999
+- making: 0.9999
+- famous: 0.9999
+
+#### lemmatized_model_skipgram_window2_dim100.model
+- documentary: 0.9876
+- feature: 0.9853
+- classic: 0.9829
+- novel: 0.9826
+- comedy: 0.9822
+
+#### lemmatized_model_skipgram_window2_dim300.model
+- documentary: 0.9931
+- comedy: 0.9925
+- drama: 0.9902
+- feature: 0.9899
+- horror: 0.9897
+
+#### lemmatized_model_skipgram_window4_dim100.model
+- classic: 0.9632
+- comedy: 0.9623
+- musical: 0.9556
+- documentary: 0.9491
+- novel: 0.9455
+
+#### lemmatized_model_skipgram_window4_dim300.model
+- comedy: 0.9768
+- classic: 0.9640
+- musical: 0.9627
+- novel: 0.9624
+- show: 0.9589
+
+#### stemmed_model_cbow_window2_dim100.model
+- Kelime bulunamadı veya benzerlik sonucu yok.
+
+#### stemmed_model_cbow_window2_dim300.model
+- Kelime bulunamadı veya benzerlik sonucu yok.
+
+#### stemmed_model_cbow_window4_dim100.model
+- Kelime bulunamadı veya benzerlik sonucu yok.
+
+#### stemmed_model_cbow_window4_dim300.model
+- Kelime bulunamadı veya benzerlik sonucu yok.
+
+#### stemmed_model_skipgram_window2_dim100.model
+- Kelime bulunamadı veya benzerlik sonucu yok.
+
+#### stemmed_model_skipgram_window2_dim300.model
+- Kelime bulunamadı veya benzerlik sonucu yok.
+
+#### stemmed_model_skipgram_window4_dim100.model
+- Kelime bulunamadı veya benzerlik sonucu yok.
+
+#### stemmed_model_skipgram_window4_dim300.model
+- Kelime bulunamadı veya benzerlik sonucu yok.
+
+### Kelime: 'hero'
+
+#### lemmatized_model_cbow_window2_dim100.model
+- part: 0.9996
+- battle: 0.9996
+- play: 0.9995
+- seems: 0.9995
+- criminal: 0.9995
+
+#### lemmatized_model_cbow_window2_dim300.model
+- creature: 0.9998
+- play: 0.9998
+- part: 0.9998
+- army: 0.9998
+- open: 0.9998
+
+#### lemmatized_model_cbow_window4_dim100.model
+- america: 0.9997
+- seems: 0.9997
+- battle: 0.9997
+- british: 0.9997
+- criminal: 0.9997
+
+#### lemmatized_model_cbow_window4_dim300.model
+- part: 0.9999
+- known: 0.9999
+- london: 0.9999
+- rock: 0.9999
+- using: 0.9999
+
+#### lemmatized_model_skipgram_window2_dim100.model
+- europe: 0.9947
+- major: 0.9943
+- height: 0.9938
+- creating: 0.9933
+- trade: 0.9933
+
+#### lemmatized_model_skipgram_window2_dim300.model
+- number: 0.9971
+- part: 0.9966
+- worst: 0.9963
+- train: 0.9963
+- jeopardy: 0.9962
+
+#### lemmatized_model_skipgram_window4_dim100.model
+- domination: 0.9838
+- perspective: 0.9831
+- backdrop: 0.9827
+- twilight: 0.9817
+- mankind: 0.9812
+
+#### lemmatized_model_skipgram_window4_dim300.model
+- rage: 0.9898
+- domination: 0.9891
+- iii: 0.9875
+- mankind: 0.9875
+- perspective: 0.9874
+
+#### stemmed_model_cbow_window2_dim100.model
+- comput: 0.9992
+- assign: 0.9992
+- strang: 0.9992
+- player: 0.9991
+- number: 0.9991
+
+#### stemmed_model_cbow_window2_dim300.model
+- comput: 0.9998
+- train: 0.9998
+- full: 0.9998
+- major: 0.9998
+- weapon: 0.9998
+
+#### stemmed_model_cbow_window4_dim100.model
+- complet: 0.9996
+- gener: 0.9996
+- part: 0.9995
+- major: 0.9995
+- variou: 0.9995
+
+#### stemmed_model_cbow_window4_dim300.model
+- part: 0.9999
+- open: 0.9999
+- armi: 0.9999
+- gener: 0.9999
+- major: 0.9999
+
+#### stemmed_model_skipgram_window2_dim100.model
+- major: 0.9919
+- iraq: 0.9906
+- brink: 0.9903
+- backdrop: 0.9899
+- iii: 0.9898
+
+#### stemmed_model_skipgram_window2_dim300.model
+- rage: 0.9962
+- zone: 0.9960
+- major: 0.9957
+- sport: 0.9952
+- europ: 0.9951
+
+#### stemmed_model_skipgram_window4_dim100.model
+- europ: 0.9728
+- zone: 0.9726
+- mankind: 0.9726
+- major: 0.9716
+- britain: 0.9715
+
+#### stemmed_model_skipgram_window4_dim300.model
+- britain: 0.9839
+- line: 0.9830
+- greatest: 0.9824
+- discoveri: 0.9809
+- revolut: 0.9808
+
+### Kelime: 'love'
+
+#### lemmatized_model_cbow_window2_dim100.model
+- asleep: 0.9709
+- woman: 0.9617
+- young: 0.9617
+- beautiful: 0.9596
+- instantly: 0.9589
+
+#### lemmatized_model_cbow_window2_dim300.model
+- asleep: 0.9872
+- apart: 0.9856
+- meet: 0.9855
+- beautiful: 0.9854
+- prey: 0.9850
+
+#### lemmatized_model_cbow_window4_dim100.model
+- young: 0.9862
+- woman: 0.9851
+- meet: 0.9830
+- beautiful: 0.9821
+- fall: 0.9818
+
+#### lemmatized_model_cbow_window4_dim300.model
+- woman: 0.9946
+- meet: 0.9939
+- life: 0.9937
+- fall: 0.9936
+- man: 0.9935
+
+#### lemmatized_model_skipgram_window2_dim100.model
+- begin: 0.8098
+- beautiful: 0.7975
+- asleep: 0.7838
+- meet: 0.7801
+- dream: 0.7794
+
+#### lemmatized_model_skipgram_window2_dim300.model
+- meet: 0.8262
+- beautiful: 0.8255
+- begin: 0.8156
+- versailles: 0.7925
+- asleep: 0.7825
+
+#### lemmatized_model_skipgram_window4_dim100.model
+- beautiful: 0.8154
+- relationship: 0.8142
+- meet: 0.8004
+- romance: 0.7824
+- begin: 0.7716
+
+#### lemmatized_model_skipgram_window4_dim300.model
+- relationship: 0.8225
+- begin: 0.8180
+- beautiful: 0.8170
+- complicated: 0.7905
+- meet: 0.7895
+
+#### stemmed_model_cbow_window2_dim100.model
+- asleep: 0.9437
+- woman: 0.9146
+- madli: 0.9143
+- stori: 0.9128
+- life: 0.9113
+
+#### stemmed_model_cbow_window2_dim300.model
+- asleep: 0.9742
+- life: 0.9598
+- woman: 0.9563
+- meet: 0.9562
+- prey: 0.9549
+
+#### stemmed_model_cbow_window4_dim100.model
+- woman: 0.9601
+- fall: 0.9568
+- young: 0.9502
+- asleep: 0.9444
+- life: 0.9442
+
+#### stemmed_model_cbow_window4_dim300.model
+- woman: 0.9841
+- fall: 0.9835
+- young: 0.9818
+- man: 0.9789
+- life: 0.9787
+
+#### stemmed_model_skipgram_window2_dim100.model
+- begin: 0.8439
+- meet: 0.8325
+- beauti: 0.8240
+- complic: 0.7825
+- asleep: 0.7801
+
+#### stemmed_model_skipgram_window2_dim300.model
+- begin: 0.8660
+- beauti: 0.8207
+- meet: 0.8196
+- housemaid: 0.8089
+- start: 0.7989
+
+#### stemmed_model_skipgram_window4_dim100.model
+- relationship: 0.8152
+- meet: 0.8137
+- beauti: 0.8111
+- complic: 0.8082
+- romant: 0.8052
+
+#### stemmed_model_skipgram_window4_dim300.model
+- beauti: 0.8325
+- meet: 0.8256
+- relationship: 0.8251
+- begin: 0.8149
+- romanc: 0.8143
+
+### Kelime: 'villain'
+
+#### lemmatized_model_cbow_window2_dim100.model
+- food: 0.9990
+- criminal: 0.9989
+- heart: 0.9988
+- everyone: 0.9988
+- evil: 0.9988
+
+#### lemmatized_model_cbow_window2_dim300.model
+- mr: 0.9994
+- self: 0.9993
+- king: 0.9993
+- stolen: 0.9993
+- dr: 0.9993
+
+#### lemmatized_model_cbow_window4_dim100.model
+- heart: 0.9993
+- everyone: 0.9993
+- could: 0.9993
+- including: 0.9992
+- target: 0.9992
+
+#### lemmatized_model_cbow_window4_dim300.model
+- mr: 0.9996
+- animal: 0.9995
+- never: 0.9995
+- right: 0.9995
+- scene: 0.9995
+
+#### lemmatized_model_skipgram_window2_dim100.model
+- routine: 0.9979
+- wit: 0.9978
+- humanity: 0.9977
+- table: 0.9976
+- technology: 0.9976
+
+#### lemmatized_model_skipgram_window2_dim300.model
+- planning: 0.9992
+- storm: 0.9992
+- devil: 0.9992
+- heroic: 0.9992
+- tank: 0.9992
+
+#### lemmatized_model_skipgram_window4_dim100.model
+- battling: 0.9961
+- solution: 0.9960
+- creator: 0.9958
+- freedom: 0.9955
+- dna: 0.9954
+
+#### lemmatized_model_skipgram_window4_dim300.model
+- mastermind: 0.9982
+- resistance: 0.9981
+- creator: 0.9974
+- sorcerer: 0.9972
+- leadership: 0.9971
+
+#### stemmed_model_cbow_window2_dim100.model
+- stage: 0.9991
+- blood: 0.9991
+- fortun: 0.9991
+- king: 0.9991
+- christian: 0.9990
+
+#### stemmed_model_cbow_window2_dim300.model
+- king: 0.9996
+- compani: 0.9996
+- assist: 0.9996
+- ray: 0.9995
+- monster: 0.9995
+
+#### stemmed_model_cbow_window4_dim100.model
+- mr: 0.9992
+- assist: 0.9992
+- right: 0.9992
+- hunter: 0.9992
+- think: 0.9991
+
+#### stemmed_model_cbow_window4_dim300.model
+- frank: 0.9997
+- right: 0.9997
+- planet: 0.9997
+- compani: 0.9997
+- anim: 0.9997
+
+#### stemmed_model_skipgram_window2_dim100.model
+- creator: 0.9966
+- underwat: 0.9966
+- coloni: 0.9965
+- tactic: 0.9965
+- enabl: 0.9965
+
+#### stemmed_model_skipgram_window2_dim300.model
+- plant: 0.9985
+- persian: 0.9984
+- massiv: 0.9984
+- espionag: 0.9984
+- advanc: 0.9984
+
+#### stemmed_model_skipgram_window4_dim100.model
+- espionag: 0.9917
+- mastermind: 0.9913
+- combat: 0.9913
+- devic: 0.9911
+- bug: 0.9909
+
+#### stemmed_model_skipgram_window4_dim300.model
+- x: 0.9971
+- mastermind: 0.9958
+- diabol: 0.9956
+- creator: 0.9953
+- devic: 0.9951
+
+### Kelime: 'action'
+
+#### lemmatized_model_cbow_window2_dim100.model
+- show: 0.9995
+- star: 0.9994
+- plot: 0.9994
+- case: 0.9994
+- pirate: 0.9994
+
+#### lemmatized_model_cbow_window2_dim300.model
+- also: 0.9998
+- violent: 0.9998
+- show: 0.9998
+- hand: 0.9998
+- could: 0.9998
+
+#### lemmatized_model_cbow_window4_dim100.model
+- ancient: 0.9997
+- machine: 0.9996
+- using: 0.9996
+- musical: 0.9996
+- various: 0.9996
+
+#### lemmatized_model_cbow_window4_dim300.model
+- ever: 0.9999
+- control: 0.9999
+- battle: 0.9999
+- former: 0.9998
+- final: 0.9998
+
+#### lemmatized_model_skipgram_window2_dim100.model
+- length: 0.9889
+- sequel: 0.9874
+- reality: 0.9873
+- cast: 0.9871
+- tv: 0.9869
+
+#### lemmatized_model_skipgram_window2_dim300.model
+- tv: 0.9935
+- length: 0.9933
+- producer: 0.9926
+- budget: 0.9924
+- shot: 0.9923
+
+#### lemmatized_model_skipgram_window4_dim100.model
+- full: 0.9718
+- reality: 0.9670
+- sequel: 0.9627
+- part: 0.9619
+- studio: 0.9616
+
+#### lemmatized_model_skipgram_window4_dim300.model
+- animated: 0.9814
+- full: 0.9813
+- cast: 0.9804
+- television: 0.9802
+- length: 0.9794
+
+#### stemmed_model_cbow_window2_dim100.model
+- prove: 0.9993
+- shoot: 0.9992
+- train: 0.9992
+- fire: 0.9992
+- fate: 0.9992
+
+#### stemmed_model_cbow_window2_dim300.model
+- director: 0.9998
+- could: 0.9997
+- prove: 0.9997
+- caus: 0.9997
+- nazi: 0.9997
+
+#### stemmed_model_cbow_window4_dim100.model
+- expert: 0.9996
+- perform: 0.9995
+- competit: 0.9995
+- program: 0.9995
+- use: 0.9995
+
+#### stemmed_model_cbow_window4_dim300.model
+- violent: 0.9999
+- within: 0.9998
+- georg: 0.9998
+- effort: 0.9998
+- caus: 0.9998
+
+#### stemmed_model_skipgram_window2_dim100.model
+- concert: 0.9836
+- length: 0.9834
+- anniversari: 0.9834
+- pack: 0.9832
+- camera: 0.9830
+
+#### stemmed_model_skipgram_window2_dim300.model
+- us: 0.9906
+- reach: 0.9905
+- produc: 0.9904
+- pack: 0.9900
+- colour: 0.9899
+
+#### stemmed_model_skipgram_window4_dim100.model
+- full: 0.9647
+- sport: 0.9636
+- sequel: 0.9617
+- globe: 0.9605
+- pack: 0.9597
+
+#### stemmed_model_skipgram_window4_dim300.model
+- sport: 0.9702
+- shot: 0.9701
+- full: 0.9699
+- uniqu: 0.9672
+- camera: 0.9666
+
+## 7. Sonuç ve Öneriler
+
+### En İyi Model
+
+İstatistiklere göre, en iyi model 'lemmatized_model_cbow_window2_dim100.model' olarak belirlenmiştir.
+
+### Model Türü Karşılaştırması
+
+CBOW modelleri, genellikle SkipGram modellerinden daha büyük vokabüler boyutuna sahiptir. CBOW modeli, eğitim hızı ve yaygın kelimelerin temsili konusunda avantaj sağlayabilir.
+
+### Pencere Boyutu Karşılaştırması
+
+Daha küçük pencere boyutu (2), daha büyük pencere boyutuna (4) göre daha verimli çalışmaktadır. Bu, kelimelerin daha yakın bağlamdaki ilişkilerini yakalamak için yeterli olabilir ve eğitim süresi daha kısadır.
+
+### Vektör Boyutu Karşılaştırması
+
+Daha büyük vektör boyutu (300), daha zengin kelime temsilleri sağlar ancak model boyutu ve eğitim süresi artar. Daha küçük vektör boyutu (100), daha verimli depolama ve hesaplama sağlar ancak bazı anlamsal nüanslar kaybedilebilir.
+
+### Önişleme Tekniği Karşılaştırması
+
+Lemmatize edilmiş metinlerle eğitilen modeller, stem edilmiş metinlerle eğitilen modellerden daha büyük vokabüler boyutuna sahiptir. Lemmatization, kelimelerin anlamsal bütünlüğünü koruyarak daha zengin kelime temsilleri sağlar.
+
+### Film Öneri Sistemi İçin Öneriler
+
+Film öneri sistemi için en uygun model, 'lemmatized_model_skipgram_window4_dim300' olarak değerlendirilmektedir. Bu model:
+- Semantik ilişkileri en iyi yakalayan SkipGram mimarisine sahip
+- Geniş bağlam penceresi (4) ile uzun mesafeli ilişkileri hesaba katıyor
+- Yüksek boyutlu vektörler (300) ile zengin kelime temsilleri sağlıyor
+- Lemmatization ile kelimelerin anlamsal bütünlüğünü koruyor
+
+Bu model, film önerileri için TF-IDF tabanlı yaklaşıma göre daha anlamlı sonuçlar verebilir. Özellikle genre ve tema bazlı benzerlikler konusunda daha başarılı öneriler sunabilir.
