@@ -46,6 +46,20 @@ nltk.download('wordnet')
 
 #### Veri Seti Edinme
 Veri seti Kaggle'dan "Movie Synopsis" veri seti olarak indirilmiştir. Bu veri seti 8.457 film başlığı ve özetini içermektedir.
+Örnek kullanım şu şekilde;
+
+======================================================================
+
+1. Veri Toplama
+----------------------------------------------------------------------
+Veri kaynağı seçin:
+1. IMSDB'den yeni veri çek (internet bağlantısı gerekir)
+2. Kaggle veri setini kullan (indirmiş olmalısınız)
+3. Kaydedilmiş veriyi kullan
+Seçiminiz (1/2/3): 2
+Kaggle veri seti dosya yolu: C:\Users\MERVE\Desktop\movie_synopsis.csv  
+======================================================================
+
 
 #### Veri Ön İşleme Adımları
 Aşağıdaki komutla veri ön işleme adımlarını gerçekleştirebilirsiniz:
