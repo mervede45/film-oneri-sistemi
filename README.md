@@ -1,14 +1,16 @@
-Film Öneri Sistemi: Metin Tabanlı Veri Seti ile Yapay Zeka Modelleri Geliştirme
-Proje Hakkında
+# Film Öneri Sistemi: Metin Tabanlı Veri Seti ile Yapay Zeka Modelleri Geliştirme
+# Proje Hakkında
 Bu proje, doğal dil işleme tekniklerini kullanarak film özetleri üzerinde bir film öneri sistemi geliştirmeyi amaçlamaktadır. Zipf yasası analizleri, tokenizasyon, lemmatization ve stemming gibi ön işleme tekniklerinin yanı sıra, TF-IDF ve Word2Vec gibi vektörleştirme yöntemlerini kullanarak anlamsal film öneri algoritmaları oluşturulmuştur.
-Veri Setinin Amacı ve Kullanım Alanları
+
+
+# Veri Setinin Amacı ve Kullanım Alanları
 Bu projede kullanılan film özeti veri seti aşağıdaki amaçlarla kullanılabilir:
 
-İçerik Tabanlı Film Öneri Sistemleri: Film özetlerindeki anlamsal benzerlikler kullanılarak kullanıcılara beğenebilecekleri filmler önerilebilir.
-Metin Benzerliği Analizi: Film özetleri arasındaki benzerlikler incelenerek türler arası geçişler ve tematik ilişkiler keşfedilebilir.
-Film Türü Sınıflandırması: Özetlerdeki kelimeler ve temalar kullanılarak filmlerin türleri otomatik olarak belirlenebilir.
-Doğal Dil İşleme Tekniklerinin Karşılaştırılması: Farklı vektörleştirme yöntemlerinin (TF-IDF, Word2Vec) film özeti gibi yaratıcı metinler üzerindeki performansını değerlendirmek için kullanılabilir.
-Dil Yapılarının İncelenmesi: Zipf yasası gibi dilbilimsel kuralların film metinlerinde nasıl ortaya çıktığını incelemek için kullanılabilir.
+ İçerik Tabanlı Film Öneri Sistemleri: Film özetlerindeki anlamsal benzerlikler kullanılarak kullanıcılara beğenebilecekleri filmler önerilebilir.
+ Metin Benzerliği Analizi: Film özetleri arasındaki benzerlikler incelenerek türler arası geçişler ve tematik ilişkiler keşfedilebilir.
+ Film Türü Sınıflandırması: Özetlerdeki kelimeler ve temalar kullanılarak filmlerin türleri otomatik olarak belirlenebilir.
+ Doğal Dil İşleme Tekniklerinin Karşılaştırılması: Farklı vektörleştirme yöntemlerinin (TF-IDF, Word2Vec) film özeti gibi yaratıcı metinler üzerindeki performansını değerlendirmek için kullanılabilir.
+ Dil Yapılarının İncelenmesi: Zipf yasası gibi dilbilimsel kuralların film metinlerinde nasıl ortaya çıktığını incelemek için kullanılabilir.
 
 Gerekli Kütüphaneler ve Kurulum Talimatları
 Projeyi çalıştırmak için aşağıdaki kütüphaneleri kurmanız gerekmektedir:
