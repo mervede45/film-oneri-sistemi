@@ -122,7 +122,7 @@ nltk.download('wordnet')
    # 2. Model eğitimi
    python model_training.py
    
-   # 3. Benzerlik analizi (Ödev-2)
+   # 3. Benzerlik analizi (Ödev-2)  
    python similarity_evaluation.py
    ```
 
