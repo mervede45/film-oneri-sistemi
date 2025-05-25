@@ -1,0 +1,194 @@
+METIN BENZERLİĞİ HESAPLAMA VE DEĞERLENDİRME RAPORU
+============================================================
+
+GİRİŞ METNİ: Titanic
+ÖZET: 101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi w...
+
+1. MODEL SONUÇLARI VE BENZERLİK SKORLARI
+--------------------------------------------------
+
+TFIDF_LEMMATIZED:
+  1. Pirates (Skor: 0.0774)
+  2. Pirates (Skor: 0.0774)
+  3. The Getaway (Skor: 0.0716)
+  4. The Getaway (Skor: 0.0716)
+  5. 20,000 Leagues Under the Sea (Skor: 0.0692)
+
+TFIDF_STEMMED:
+  1. Pirates (Skor: 0.0710)
+  2. Pirates (Skor: 0.0710)
+  3. Journey to the Center of the Earth (Skor: 0.0709)
+  4. Journey to the Center of the Earth (Skor: 0.0709)
+  5. 20,000 Leagues Under the Sea (Skor: 0.0580)
+
+LEMMATIZED_MODEL_CBOW_WINDOW2_DIM100:
+  1. Driving Miss Daisy (Skor: 0.9997)
+  2. Five Minutes of Heaven (Skor: 0.9996)
+  3. Frankenstein: Birth of a Monster (Skor: 0.9996)
+  4. I Am David (Skor: 0.9995)
+  5. The Miracle Worker (Skor: 0.9995)
+
+LEMMATIZED_MODEL_CBOW_WINDOW2_DIM300:
+  1. The Shell Seekers (Skor: 0.9998)
+  2. Frankenstein: Birth of a Monster (Skor: 0.9998)
+  3. Driving Miss Daisy (Skor: 0.9998)
+  4. Garden Party (Skor: 0.9998)
+  5. I Am David (Skor: 0.9998)
+
+LEMMATIZED_MODEL_CBOW_WINDOW4_DIM100:
+  1. Frankenstein: Birth of a Monster (Skor: 0.9999)
+  2. Driving Miss Daisy (Skor: 0.9999)
+  3. The Miracle Worker (Skor: 0.9998)
+  4. I Capture the Castle (Skor: 0.9998)
+  5. I Am David (Skor: 0.9998)
+
+LEMMATIZED_MODEL_CBOW_WINDOW4_DIM300:
+  1. Driving Miss Daisy (Skor: 0.9999)
+  2. The Shell Seekers (Skor: 0.9999)
+  3. Frankenstein: Birth of a Monster (Skor: 0.9999)
+  4. Garden Party (Skor: 0.9999)
+  5. I Am David (Skor: 0.9999)
+
+LEMMATIZED_MODEL_SKIPGRAM_WINDOW2_DIM100:
+  1. The Killing Fields (Skor: 0.9987)
+  2. Driving Miss Daisy (Skor: 0.9971)
+  3. Goodbye Bafana (Skor: 0.9969)
+  4. 49 Up (Skor: 0.9966)
+  5. My Left Foot: The Story of Christy Brown (Skor: 0.9959)
+
+LEMMATIZED_MODEL_SKIPGRAM_WINDOW2_DIM300:
+  1. The Killing Fields (Skor: 0.9992)
+  2. Driving Miss Daisy (Skor: 0.9977)
+  3. Goodbye Bafana (Skor: 0.9975)
+  4. My Left Foot: The Story of Christy Brown (Skor: 0.9969)
+  5. American Movie (Skor: 0.9968)
+
+LEMMATIZED_MODEL_SKIPGRAM_WINDOW4_DIM100:
+  1. The Killing Fields (Skor: 0.9970)
+  2. My Left Foot: The Story of Christy Brown (Skor: 0.9960)
+  3. Goodbye Bafana (Skor: 0.9949)
+  4. The Miracle Worker (Skor: 0.9946)
+  5. 49 Up (Skor: 0.9944)
+
+LEMMATIZED_MODEL_SKIPGRAM_WINDOW4_DIM300:
+  1. The Killing Fields (Skor: 0.9974)
+  2. My Left Foot: The Story of Christy Brown (Skor: 0.9962)
+  3. Goodbye Bafana (Skor: 0.9959)
+  4. 49 Up (Skor: 0.9953)
+  5. The Miracle Worker (Skor: 0.9950)
+
+STEMMED_MODEL_CBOW_WINDOW2_DIM100:
+  1. Driving Miss Daisy (Skor: 0.9996)
+  2. Five Minutes of Heaven (Skor: 0.9995)
+  3. The Miracle Worker (Skor: 0.9994)
+  4. The Uninvited (Skor: 0.9992)
+  5. The Killing Fields (Skor: 0.9992)
+
+STEMMED_MODEL_CBOW_WINDOW2_DIM300:
+  1. Driving Miss Daisy (Skor: 0.9998)
+  2. The Miracle Worker (Skor: 0.9997)
+  3. I Capture the Castle (Skor: 0.9996)
+  4. The Reivers (Skor: 0.9996)
+  5. Someday My Prince Will Come (Skor: 0.9996)
+
+STEMMED_MODEL_CBOW_WINDOW4_DIM100:
+  1. Five Minutes of Heaven (Skor: 0.9998)
+  2. Driving Miss Daisy (Skor: 0.9997)
+  3. I Capture the Castle (Skor: 0.9995)
+  4. Frankenstein: Birth of a Monster (Skor: 0.9995)
+  5. Anita and Me (Skor: 0.9995)
+
+STEMMED_MODEL_CBOW_WINDOW4_DIM300:
+  1. Driving Miss Daisy (Skor: 0.9999)
+  2. Anita and Me (Skor: 0.9998)
+  3. I Capture the Castle (Skor: 0.9998)
+  4. Five Minutes of Heaven (Skor: 0.9998)
+  5. The Shell Seekers (Skor: 0.9998)
+
+STEMMED_MODEL_SKIPGRAM_WINDOW2_DIM100:
+  1. The Killing Fields (Skor: 0.9982)
+  2. Goodbye Bafana (Skor: 0.9975)
+  3. Driving Miss Daisy (Skor: 0.9961)
+  4. My Left Foot: The Story of Christy Brown (Skor: 0.9956)
+  5. 49 Up (Skor: 0.9954)
+
+STEMMED_MODEL_SKIPGRAM_WINDOW2_DIM300:
+  1. Goodbye Bafana (Skor: 0.9989)
+  2. The Killing Fields (Skor: 0.9986)
+  3. Driving Miss Daisy (Skor: 0.9978)
+  4. Provoked: A True Story (Skor: 0.9963)
+  5. What Ever Happened to Baby Jane? (Skor: 0.9961)
+
+STEMMED_MODEL_SKIPGRAM_WINDOW4_DIM100:
+  1. My Left Foot: The Story of Christy Brown (Skor: 0.9954)
+  2. The Miracle Worker (Skor: 0.9947)
+  3. Beaches (Skor: 0.9934)
+  4. Two for the Road (Skor: 0.9933)
+  5. Goodbye Bafana (Skor: 0.9929)
+
+STEMMED_MODEL_SKIPGRAM_WINDOW4_DIM300:
+  1. Goodbye Bafana (Skor: 0.9964)
+  2. My Left Foot: The Story of Christy Brown (Skor: 0.9957)
+  3. The Killing Fields (Skor: 0.9948)
+  4. The Miracle Worker (Skor: 0.9947)
+  5. The Joy Luck Club (Skor: 0.9940)
+
+2. ANLAMSAL DEĞERLENDİRME SONUÇLARI
+--------------------------------------------------
+
+tfidf_lemmatized: [1, 1, 1, 1, 1] → Ortalama: 1.00
+tfidf_stemmed: [1, 1, 1, 1, 1] → Ortalama: 1.00
+lemmatized_model_cbow_window2_dim100: [5, 5, 5, 5, 5] → Ortalama: 5.00
+lemmatized_model_cbow_window2_dim300: [5, 5, 5, 5, 5] → Ortalama: 5.00
+lemmatized_model_cbow_window4_dim100: [5, 5, 5, 5, 5] → Ortalama: 5.00
+lemmatized_model_cbow_window4_dim300: [5, 5, 5, 5, 5] → Ortalama: 5.00
+lemmatized_model_skipgram_window2_dim100: [5, 5, 5, 5, 5] → Ortalama: 5.00
+lemmatized_model_skipgram_window2_dim300: [5, 5, 5, 5, 5] → Ortalama: 5.00
+lemmatized_model_skipgram_window4_dim100: [5, 5, 5, 5, 5] → Ortalama: 5.00
+lemmatized_model_skipgram_window4_dim300: [5, 5, 5, 5, 5] → Ortalama: 5.00
+stemmed_model_cbow_window2_dim100: [5, 5, 5, 5, 5] → Ortalama: 5.00
+stemmed_model_cbow_window2_dim300: [5, 5, 5, 5, 5] → Ortalama: 5.00
+stemmed_model_cbow_window4_dim100: [5, 5, 5, 5, 5] → Ortalama: 5.00
+stemmed_model_cbow_window4_dim300: [5, 5, 5, 5, 5] → Ortalama: 5.00
+stemmed_model_skipgram_window2_dim100: [5, 5, 5, 5, 5] → Ortalama: 5.00
+stemmed_model_skipgram_window2_dim300: [5, 5, 5, 5, 5] → Ortalama: 5.00
+stemmed_model_skipgram_window4_dim100: [5, 5, 5, 5, 5] → Ortalama: 5.00
+stemmed_model_skipgram_window4_dim300: [5, 5, 5, 5, 5] → Ortalama: 5.00
+
+3. JACCARD BENZERLİK MATRİSİ
+--------------------------------------------------
+
+                                          tfidf_lemmatized  tfidf_stemmed  lemmatized_model_cbow_window2_dim100  lemmatized_model_cbow_window2_dim300  lemmatized_model_cbow_window4_dim100  lemmatized_model_cbow_window4_dim300  lemmatized_model_skipgram_window2_dim100  lemmatized_model_skipgram_window2_dim300  lemmatized_model_skipgram_window4_dim100  lemmatized_model_skipgram_window4_dim300  stemmed_model_cbow_window2_dim100  stemmed_model_cbow_window2_dim300  stemmed_model_cbow_window4_dim100  stemmed_model_cbow_window4_dim300  stemmed_model_skipgram_window2_dim100  stemmed_model_skipgram_window2_dim300  stemmed_model_skipgram_window4_dim100  stemmed_model_skipgram_window4_dim300
+tfidf_lemmatized                                       1.0            0.5                                 0.000                                 0.000                                 0.000                                 0.000                                     0.000                                     0.000                                     0.000                                     0.000                              0.000                              0.000                              0.000                              0.000                                  0.000                                  0.000                                  0.000                                  0.000
+tfidf_stemmed                                          0.5            1.0                                 0.000                                 0.000                                 0.000                                 0.000                                     0.000                                     0.000                                     0.000                                     0.000                              0.000                              0.000                              0.000                              0.000                                  0.000                                  0.000                                  0.000                                  0.000
+lemmatized_model_cbow_window2_dim100                   0.0            0.0                                 1.000                                 0.429                                 0.667                                 0.429                                     0.111                                     0.111                                     0.111                                     0.111                              0.429                              0.250                              0.429                              0.250                                  0.111                                  0.111                                  0.111                                  0.111
+lemmatized_model_cbow_window2_dim300                   0.0            0.0                                 0.429                                 1.000                                 0.429                                 1.000                                     0.111                                     0.111                                     0.000                                     0.000                              0.111                              0.111                              0.250                              0.250                                  0.111                                  0.111                                  0.000                                  0.000
+lemmatized_model_cbow_window4_dim100                   0.0            0.0                                 0.667                                 0.429                                 1.000                                 0.429                                     0.111                                     0.111                                     0.111                                     0.111                              0.250                              0.429                              0.429                              0.250                                  0.111                                  0.111                                  0.111                                  0.111
+lemmatized_model_cbow_window4_dim300                   0.0            0.0                                 0.429                                 1.000                                 0.429                                 1.000                                     0.111                                     0.111                                     0.000                                     0.000                              0.111                              0.111                              0.250                              0.250                                  0.111                                  0.111                                  0.000                                  0.000
+lemmatized_model_skipgram_window2_dim100               0.0            0.0                                 0.111                                 0.111                                 0.111                                 0.111                                     1.000                                     0.667                                     0.667                                     0.667                              0.250                              0.111                              0.111                              0.111                                  1.000                                  0.429                                  0.250                                  0.429
+lemmatized_model_skipgram_window2_dim300               0.0            0.0                                 0.111                                 0.111                                 0.111                                 0.111                                     0.667                                     1.000                                     0.429                                     0.429                              0.250                              0.111                              0.111                              0.111                                  0.667                                  0.429                                  0.250                                  0.429
+lemmatized_model_skipgram_window4_dim100               0.0            0.0                                 0.111                                 0.000                                 0.111                                 0.000                                     0.667                                     0.429                                     1.000                                     1.000                              0.250                              0.111                              0.000                              0.000                                  0.667                                  0.250                                  0.429                                  0.667
+lemmatized_model_skipgram_window4_dim300               0.0            0.0                                 0.111                                 0.000                                 0.111                                 0.000                                     0.667                                     0.429                                     1.000                                     1.000                              0.250                              0.111                              0.000                              0.000                                  0.667                                  0.250                                  0.429                                  0.667
+stemmed_model_cbow_window2_dim100                      0.0            0.0                                 0.429                                 0.111                                 0.250                                 0.111                                     0.250                                     0.250                                     0.250                                     0.250                              1.000                              0.250                              0.250                              0.250                                  0.250                                  0.250                                  0.111                                  0.250
+stemmed_model_cbow_window2_dim300                      0.0            0.0                                 0.250                                 0.111                                 0.429                                 0.111                                     0.111                                     0.111                                     0.111                                     0.111                              0.250                              1.000                              0.250                              0.250                                  0.111                                  0.111                                  0.111                                  0.111
+stemmed_model_cbow_window4_dim100                      0.0            0.0                                 0.429                                 0.250                                 0.429                                 0.250                                     0.111                                     0.111                                     0.000                                     0.000                              0.250                              0.250                              1.000                              0.667                                  0.111                                  0.111                                  0.000                                  0.000
+stemmed_model_cbow_window4_dim300                      0.0            0.0                                 0.250                                 0.250                                 0.250                                 0.250                                     0.111                                     0.111                                     0.000                                     0.000                              0.250                              0.250                              0.667                              1.000                                  0.111                                  0.111                                  0.000                                  0.000
+stemmed_model_skipgram_window2_dim100                  0.0            0.0                                 0.111                                 0.111                                 0.111                                 0.111                                     1.000                                     0.667                                     0.667                                     0.667                              0.250                              0.111                              0.111                              0.111                                  1.000                                  0.429                                  0.250                                  0.429
+stemmed_model_skipgram_window2_dim300                  0.0            0.0                                 0.111                                 0.111                                 0.111                                 0.111                                     0.429                                     0.429                                     0.250                                     0.250                              0.250                              0.111                              0.111                              0.111                                  0.429                                  1.000                                  0.111                                  0.250
+stemmed_model_skipgram_window4_dim100                  0.0            0.0                                 0.111                                 0.000                                 0.111                                 0.000                                     0.250                                     0.250                                     0.429                                     0.429                              0.111                              0.111                              0.000                              0.000                                  0.250                                  0.111                                  1.000                                  0.429
+stemmed_model_skipgram_window4_dim300                  0.0            0.0                                 0.111                                 0.000                                 0.111                                 0.000                                     0.429                                     0.429                                     0.667                                     0.667                              0.250                              0.111                              0.000                              0.000                                  0.429                                  0.250                                  0.429                                  1.000
+
+4. ANALİZ VE YORUMLAR
+--------------------------------------------------
+
+En İyi Performans Gösteren Modeller:
+1. lemmatized_model_cbow_window2_dim100: 5.00
+2. lemmatized_model_cbow_window2_dim300: 5.00
+3. lemmatized_model_cbow_window4_dim100: 5.00
+
+En Yüksek Jaccard Benzerlik Skorları:
+1. lemmatized_model_cbow_window2_dim300 vs lemmatized_model_cbow_window4_dim300: 1.000
+2. lemmatized_model_cbow_window4_dim300 vs lemmatized_model_cbow_window2_dim300: 1.000
+3. lemmatized_model_skipgram_window2_dim100 vs stemmed_model_skipgram_window2_dim100: 1.000
+4. lemmatized_model_skipgram_window4_dim100 vs lemmatized_model_skipgram_window4_dim300: 1.000
+5. lemmatized_model_skipgram_window4_dim300 vs lemmatized_model_skipgram_window4_dim100: 1.000
